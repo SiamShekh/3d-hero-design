@@ -1,0 +1,191 @@
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #0A00CC;
+    color: #ffffff7e;
+    font-family: "Montserrat", sans-serif;
+    position: sticky;
+    top: 0;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: rgba(255, 255, 255, 0.329);
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+#nav-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 700;
+}
+
+#nav-item p:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+    text-decoration: underline;
+    transition: 500ms ease-in-out;
+}
+
+#home_selected {
+    color: #FFFFFF;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #0A00CC;
+}
+
+#content {
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+#icon {
+    font-weight: 800;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#icon span {
+    color: #D2FFD1;
+}
+
+#download {
+    background: #000;
+    padding: 8px 30px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: 2px white solid;
+}
+
+#download:hover {
+    background: white;
+    color: black;
+    transition: 2s ease-in-out;
+}
+
+#hero1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+}
+
+#hero1 div {
+    flex: 1;
+}
+
+#hi {
+    font-size: 40px;
+    font-weight: 600;
+    opacity: 60%;
+    line-height: 0;
+}
+
+#me {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 0;
+}
+
+#me span {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+#role {
+    background: yellow;
+    width: fit-content;
+    color: black;
+}
+
+#info {
+    font-size: 14px;
+    opacity: 70%;
+}
+
+.spline {
+    position: absolute;
+    bottom: 0;
+    right: -25%;
+    /* scale: 1; */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #info {
+        font-size: 10px;
+    }
+    #hi {
+        font-size: 20px;
+    }
+    #me {
+        font-size: 25px;
+    }
+    #me span {
+        font-size: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    #nav-item {
+        display: none;
+    }
+    nav{
+        padding: 10px;
+    }
+    #icon{
+        font-size: 25px;
+    }
+    #download{
+        display: none;
+    }
+    #hero1{
+        flex-direction: column-reverse;
+        height: 100%;
+        padding: 5px;
+    }
+    #info {
+        font-size: 10px;
+    }
+    #hi{
+        font-size: 20px;
+    }
+    #me{
+        font-size: 25px;
+    }
+    #me span{
+        font-size: 25px;
+    }
+    .spline{
+        right: 0;
+        scale: 1;
+        position: relative;
+    }
+    
+}
